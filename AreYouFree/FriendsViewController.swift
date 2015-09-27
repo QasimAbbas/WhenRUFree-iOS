@@ -36,6 +36,14 @@ class FriendsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func venmo(sender: AnyObject) {
+        
+        var url  = NSURL(string: "https://itunes.apple.com/us/app/venmo/id351727428?mt=8"); // Change the URL with your URL Scheme
+        if UIApplication.sharedApplication().canOpenURL(url!) == true
+        {
+            UIApplication.sharedApplication().openURL(url!)
+        }
+    }
     
     func rightSwiped()
     {
@@ -49,7 +57,6 @@ class FriendsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
