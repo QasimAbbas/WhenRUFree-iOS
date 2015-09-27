@@ -29,24 +29,32 @@ class ViewController: UIViewController {
     
     func boxGenerator(){
         
-        let imageName = "yourImage.png"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
+        let label = UILabel(frame: CGRectMake(0, 0, 200, 31))
+        label.center = CGPointMake(160,80)
+        label.textAlignment = NSTextAlignment.Center
+        label.text = "Qasim Abbas"
+        label.font = UIFont(name: "HelveticaNeue-UltraLight", size: 30)
+        self.view.addSubview(label)
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
-        let screenWidth = screenSize.width * 0.15
+        let screenWidth = screenSize.width * 0.13
         let screenHeight = screenSize.height * 0.33
         
         let square = UIView(frame: CGRect(x: screenWidth, y: 0, width: 225, height: 225))
         square.backgroundColor = UIColor.grayColor()
         view.addSubview(square)
+    
+        var imageView : UIImageView
+        imageView  = UIImageView(frame:CGRectMake(0, 0, 245, 245));
+        imageView.image = UIImage(named:"your-image.jpg")
+        square.addSubview(imageView)
         
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [square])
         animator.addBehavior(gravity)
         
         
-        let insets: UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 10.0, bottom:screenHeight, right: 10.0)
+        let insets: UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0, bottom:screenHeight, right: 0)
         collision = UICollisionBehavior(items: [square])
         collision.setTranslatesReferenceBoundsIntoBoundaryWithInsets(insets)
         animator.addBehavior(collision)
