@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     
     func boxGenerator(){
-        
+        label.text = "Alex Jia"
         labeltext = "Alex Jia"
         
         label = UILabel(frame: CGRectMake(0, 0, 200, 31))
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     }
     
     func otherBoxGenerator(){
-        labeltext = "Roopesh"
+        label.text = "Roopesh"
         
         label = UILabel(frame: CGRectMake(0, 0, 200, 31))
         label.center = CGPointMake(160,80)
@@ -130,7 +130,18 @@ class ViewController: UIViewController {
     }
     
     func downSwiped(){
-        otherBoxGenerator()
+        
+        if(labeltext != "Roopesh"){
+            
+            labeltext = "Roopesh"
+            otherBoxGenerator()
+            
+        }else{
+            labeltext = ""
+            label.text = ""
+            boxGenerator()
+        }
+        
     }
     
     
