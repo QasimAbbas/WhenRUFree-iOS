@@ -11,9 +11,23 @@ import UIKit
 class FriendsViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        //-----------down swipe gestures in view--------------//
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeDown)
+
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func rightSwiped()
+    {
+        print("Swiped Right")
+        [self .performSegueWithIdentifier("segueBack", sender: nil)];
+        
     }
 
     override func didReceiveMemoryWarning() {
