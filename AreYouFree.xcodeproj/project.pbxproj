@@ -79,7 +79,6 @@
 			children = (
 				967EBFAC1BB78CFC00F4068A /* AreYouFree */,
 				967EBFC11BB78CFC00F4068A /* AreYouFreeTests */,
-				967EBFCC1BB78CFC00F4068A /* AreYouFreeUITests */,
 				967EBFAB1BB78CFC00F4068A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +102,7 @@
 				967EBFB41BB78CFC00F4068A /* Assets.xcassets */,
 				967EBFB61BB78CFC00F4068A /* LaunchScreen.storyboard */,
 				967EBFB91BB78CFC00F4068A /* Info.plist */,
+				967EBFCC1BB78CFC00F4068A /* AreYouFreeUITests */,
 			);
 			path = AreYouFree;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 				967EBFCF1BB78CFC00F4068A /* Info.plist */,
 			);
 			path = AreYouFreeUITests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -483,6 +483,7 @@
 				967EBFD41BB78CFC00F4068A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967EBFD51BB78CFC00F4068A /* Build configuration list for PBXNativeTarget "AreYouFreeTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				967EBFD71BB78CFC00F4068A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967EBFD81BB78CFC00F4068A /* Build configuration list for PBXNativeTarget "AreYouFreeUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +501,7 @@
 				967EBFDA1BB78CFC00F4068A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

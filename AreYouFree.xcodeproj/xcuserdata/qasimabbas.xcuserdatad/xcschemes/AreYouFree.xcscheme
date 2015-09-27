@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "967EBFA91BB78CFC00F4068A"
+               BuildableName = "AreYouFree.app"
+               BlueprintName = "AreYouFree"
+               ReferencedContainer = "container:AreYouFree.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "967EBFBD1BB78CFC00F4068A"
+               BuildableName = "AreYouFreeTests.xctest"
+               BlueprintName = "AreYouFreeTests"
+               ReferencedContainer = "container:AreYouFree.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "967EBFC81BB78CFC00F4068A"
+               BuildableName = "AreYouFreeUITests.xctest"
+               BlueprintName = "AreYouFreeUITests"
+               ReferencedContainer = "container:AreYouFree.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "967EBFA91BB78CFC00F4068A"
+            BuildableName = "AreYouFree.app"
+            BlueprintName = "AreYouFree"
+            ReferencedContainer = "container:AreYouFree.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "967EBFA91BB78CFC00F4068A"
+            BuildableName = "AreYouFree.app"
+            BlueprintName = "AreYouFree"
+            ReferencedContainer = "container:AreYouFree.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "967EBFA91BB78CFC00F4068A"
+            BuildableName = "AreYouFree.app"
+            BlueprintName = "AreYouFree"
+            ReferencedContainer = "container:AreYouFree.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
