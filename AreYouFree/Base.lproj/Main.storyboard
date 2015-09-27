@@ -74,15 +74,19 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFN-nz-K9e">
                                 <rect key="frame" x="33" y="39" width="534" height="288"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="288" id="z7i-wa-c1M"/>
+                                    <constraint firstAttribute="height" constant="288" id="Jn8-fe-1QS"/>
                                 </constraints>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mow-CF-gEr">
-                                <rect key="frame" x="271" y="389" width="71" height="30"/>
+                                <rect key="frame" x="0.0" y="278" width="594" height="248"/>
                                 <state key="normal" title="Hit me up!"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHc-M4-7bk">
-                                <rect key="frame" x="252" y="427" width="109" height="30"/>
+                                <rect key="frame" x="139" y="439" width="316" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="7wj-gA-P2F"/>
+                                    <constraint firstAttribute="width" constant="316" id="s0s-Y4-wXh"/>
+                                </constraints>
                                 <state key="normal" title="Split the Check!"/>
                                 <connections>
                                     <action selector="venmo:" destination="0pE-hH-gHO" eventType="touchUpInside" id="iIA-Dc-lnd"/>
@@ -91,21 +95,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="KFN-nz-K9e" secondAttribute="trailing" constant="13" id="0OW-n0-L1Y"/>
-                            <constraint firstAttribute="trailing" secondItem="L3l-oF-Z7R" secondAttribute="trailing" id="7RL-8G-YJi"/>
-                            <constraint firstItem="KFN-nz-K9e" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leadingMargin" constant="13" id="CuF-wJ-EfC"/>
-                            <constraint firstItem="KFN-nz-K9e" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leadingMargin" constant="13" id="DBa-RE-Nuf"/>
-                            <constraint firstItem="Mow-CF-gEr" firstAttribute="top" secondItem="KFN-nz-K9e" secondAttribute="bottom" constant="62" id="OKo-uT-Cgl"/>
-                            <constraint firstItem="dHc-M4-7bk" firstAttribute="top" secondItem="Mow-CF-gEr" secondAttribute="bottom" constant="8" symbolic="YES" id="PNe-mS-REc"/>
-                            <constraint firstItem="KFN-nz-K9e" firstAttribute="top" secondItem="JiO-0P-xP1" secondAttribute="bottom" constant="19" id="UGW-BW-9iI"/>
-                            <constraint firstItem="vFC-ly-vO4" firstAttribute="top" secondItem="L3l-oF-Z7R" secondAttribute="bottom" constant="8" symbolic="YES" id="XZh-EW-UP0"/>
-                            <constraint firstItem="Mow-CF-gEr" firstAttribute="centerX" secondItem="dHc-M4-7bk" secondAttribute="centerX" id="a99-Qp-gUF"/>
-                            <constraint firstItem="KFN-nz-K9e" firstAttribute="centerX" secondItem="lln-nV-ahs" secondAttribute="centerX" id="aGo-lL-d3N"/>
-                            <constraint firstItem="Mow-CF-gEr" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leadingMargin" constant="251" id="bN9-WS-Rza"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mow-CF-gEr" secondAttribute="trailing" constant="238" id="gq8-c7-OwS"/>
-                            <constraint firstItem="dHc-M4-7bk" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leadingMargin" constant="232" id="h7o-pw-LNK"/>
-                            <constraint firstItem="dHc-M4-7bk" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leading" constant="249" id="vBO-ne-hZH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dHc-M4-7bk" secondAttribute="trailing" constant="219" id="vle-Qe-Jhh"/>
+                            <constraint firstItem="Mow-CF-gEr" firstAttribute="centerX" secondItem="dHc-M4-7bk" secondAttribute="centerX" id="0Hf-dZ-NsP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mow-CF-gEr" secondAttribute="trailing" constant="-14" id="0TJ-XX-dp3"/>
+                            <constraint firstItem="KFN-nz-K9e" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leadingMargin" constant="13" id="0kl-qA-bFc"/>
+                            <constraint firstItem="Mow-CF-gEr" firstAttribute="top" secondItem="JiO-0P-xP1" secondAttribute="bottom" constant="258" id="EmA-ow-peh"/>
+                            <constraint firstItem="KFN-nz-K9e" firstAttribute="centerX" secondItem="lln-nV-ahs" secondAttribute="centerX" id="OOI-zx-Xvm"/>
+                            <constraint firstItem="KFN-nz-K9e" firstAttribute="top" secondItem="JiO-0P-xP1" secondAttribute="bottom" constant="19" id="R1b-As-Gmc"/>
+                            <constraint firstItem="dHc-M4-7bk" firstAttribute="bottom" secondItem="Mow-CF-gEr" secondAttribute="bottom" id="dH8-xV-Woe"/>
+                            <constraint firstAttribute="trailing" secondItem="L3l-oF-Z7R" secondAttribute="trailing" id="g4c-Aj-mMY"/>
+                            <constraint firstItem="L3l-oF-Z7R" firstAttribute="top" secondItem="Mow-CF-gEr" secondAttribute="bottom" constant="36" id="lRZ-hi-co4"/>
+                            <constraint firstItem="Mow-CF-gEr" firstAttribute="leading" secondItem="lln-nV-ahs" secondAttribute="leading" id="mDv-j9-Kcd"/>
+                            <constraint firstItem="vFC-ly-vO4" firstAttribute="top" secondItem="dHc-M4-7bk" secondAttribute="bottom" constant="74" id="s7P-Eo-13x"/>
                         </constraints>
                     </view>
                     <connections>
