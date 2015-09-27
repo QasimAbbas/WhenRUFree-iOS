@@ -14,6 +14,8 @@
 		967EBFB81BB78CFC00F4068A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967EBFB61BB78CFC00F4068A /* LaunchScreen.storyboard */; };
 		967EBFC31BB78CFC00F4068A /* AreYouFreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967EBFC21BB78CFC00F4068A /* AreYouFreeTests.swift */; };
 		967EBFCE1BB78CFC00F4068A /* AreYouFreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967EBFCD1BB78CFC00F4068A /* AreYouFreeUITests.swift */; };
+		96BF68BB1BB8121400FB0CDE /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF68BA1BB8121400FB0CDE /* CustomSegue.swift */; settings = {ASSET_TAGS = (); }; };
+		96BF68BD1BB8142A00FB0CDE /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF68BC1BB8142A00FB0CDE /* FriendsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		967EBFC91BB78CFC00F4068A /* AreYouFreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AreYouFreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		967EBFCD1BB78CFC00F4068A /* AreYouFreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreYouFreeUITests.swift; sourceTree = "<group>"; };
 		967EBFCF1BB78CFC00F4068A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BF68BA1BB8121400FB0CDE /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		96BF68BC1BB8142A00FB0CDE /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,11 @@
 		967EBFAC1BB78CFC00F4068A /* AreYouFree */ = {
 			isa = PBXGroup;
 			children = (
+				96BF68BA1BB8121400FB0CDE /* CustomSegue.swift */,
 				967EBFAD1BB78CFC00F4068A /* AppDelegate.swift */,
 				967EBFAF1BB78CFC00F4068A /* ViewController.swift */,
 				967EBFB11BB78CFC00F4068A /* Main.storyboard */,
+				96BF68BC1BB8142A00FB0CDE /* FriendsViewController.swift */,
 				967EBFB41BB78CFC00F4068A /* Assets.xcassets */,
 				967EBFB61BB78CFC00F4068A /* LaunchScreen.storyboard */,
 				967EBFB91BB78CFC00F4068A /* Info.plist */,
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BF68BD1BB8142A00FB0CDE /* FriendsViewController.swift in Sources */,
 				967EBFB01BB78CFC00F4068A /* ViewController.swift in Sources */,
+				96BF68BB1BB8121400FB0CDE /* CustomSegue.swift in Sources */,
 				967EBFAE1BB78CFC00F4068A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

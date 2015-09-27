@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  AreYouFree
@@ -59,10 +60,36 @@ class ViewController: UIViewController {
         collision.setTranslatesReferenceBoundsIntoBoundaryWithInsets(insets)
         animator.addBehavior(collision)
         
-       
-
+        //-----------down swipe gestures in view--------------//
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeDown)
+  
 
     }
+    
+    
+    func rightSwiped()
+    {
+        print("Swiped Right")
+        [self .performSegueWithIdentifier("hangSegue", sender: nil)];
+        
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue is CustomSegue {
+            (segue as! CustomSegue).animationType = .Push
+        }
+    }
+    
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        let segue = CustomUnwindSegue(identifier: identifier, source: fromViewController, destination: toViewController)
+        segue.animationType = .Push
+        return segue
+    }
+
+    
     
     
 

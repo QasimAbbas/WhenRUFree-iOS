@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,21 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-eh-j61">
-                                <rect key="frame" x="108" y="467" width="118" height="30"/>
-                                <state key="normal" title="Who else is free?"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-zB-vGb">
-                                <rect key="frame" x="422" y="447" width="103" height="69"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-zB-vGb">
+                                <rect key="frame" x="422" y="467" width="103" height="30"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="g9Q-Qy-5as"/>
+                                </constraints>
                                 <state key="normal" title="Want to Hang?"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IA2-pr-V6K" appends="YES" id="hkR-Xf-zcV"/>
+                                    <segue destination="0pE-hH-gHO" kind="custom" identifier="hangSegue" customClass="CustomSegue" customModule="AreYouFree" customModuleProvider="target" id="BPn-dZ-BUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-eh-j61">
+                                <rect key="frame" x="80" y="467" width="118" height="30"/>
+                                <state key="normal" title="Who else is free?"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="AMY-eh-j61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="GHW-cD-33N"/>
+                            <constraint firstItem="pBx-zB-vGb" firstAttribute="baseline" secondItem="AMY-eh-j61" secondAttribute="baseline" id="Yfx-Yh-ZbT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AMY-eh-j61" secondAttribute="bottom" constant="103" id="hnB-iW-6Eo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pBx-zB-vGb" secondAttribute="trailing" constant="55" id="rQh-b3-KtY"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IA2-pr-V6K" appends="YES" id="ubA-WL-WxS"/>
+                            <outletCollection property="gestureRecognizers" destination="IA2-pr-V6K" appends="YES" id="6At-7V-zD0"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="IA2-pr-V6K">
+                    <connections>
+                        <action selector="segueOut:" destination="BYZ-38-t0r" id="SgG-U3-bUF"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="378" y="324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MC2-K2-Ra7">
+            <objects>
+                <viewController id="0pE-hH-gHO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JiO-0P-xP1"/>
+                        <viewControllerLayoutGuide type="bottom" id="vFC-ly-vO4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lln-nV-ahs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr9-3g-PAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="324"/>
         </scene>
     </scenes>
 </document>
