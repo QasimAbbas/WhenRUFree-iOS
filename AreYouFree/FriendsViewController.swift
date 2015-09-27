@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import MapKit
 
 class FriendsViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         
         //-----------down swipe gestures in view--------------//
         let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
         swipeDown.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeDown)
+        
+        // set initial location in Honolulu
+        let initialLocation = CLLocation(latitude: 51.5033630, longitude: -0.1276250)
+        
+        let regionRadius: CLLocationDistance = 20
+        func centerMapOnLocation(location: CLLocation) {
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                regionRadius * 2.0, regionRadius * 2.0)
+            mapView.setRegion(coordinateRegion, animated: true)
+        }
+        
+        centerMapOnLocation(initialLocation)
 
         
         super.viewDidLoad()

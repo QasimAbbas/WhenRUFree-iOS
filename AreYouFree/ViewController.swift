@@ -22,11 +22,12 @@ class ViewController: UIViewController {
         
         boxGenerator()
         
+        /*
         //-----------left swipe gestures in view--------------//
         let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("downSwiped"))
         swipeDown.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipeDown)
-        
+        */
         
         
         super.viewDidLoad()
@@ -124,7 +125,7 @@ class ViewController: UIViewController {
     
     func rightSwiped()
     {
-        print("Swiped Right")
+        print("Swiped Left")
         [self .performSegueWithIdentifier("hangSegue", sender: nil)];
         
     }
@@ -136,9 +137,9 @@ class ViewController: UIViewController {
             labeltext = "Roopesh"
             otherBoxGenerator()
             
-        }else{
-            labeltext = ""
-            label.text = ""
+        }else if(labeltext == "Roopesh"){
+            
+            labeltext = "Alex Jia"
             boxGenerator()
         }
         
